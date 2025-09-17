@@ -10,4 +10,4 @@ nejdůležitějších nástrojů pro vývoj počítačových her i filmových ef
 
 [Více zde](https://en.wikipedia.org/wiki/Tim_Sweeney_(game_developer))
 
-![Tim Sweeney](https://upload.wikimedia.org/wikipedia/commons/1/11/Tim_Sweeney%2C_GDCA_2017_%28portrait_crop%29.jpg)
+![Tim Sweeney](GDCA_2017.jpg)
