@@ -1,12 +1,15 @@
 # Co u mě najdete
 
-## prvni_web
+## První pokus web
 
-- pokus
-- pokus2
-- pokus3
-- pokus4
-- style
+- pojmenováno jako prvni_web
+- jeden s bootstrapem
+- konkrétně
+  - pokus
+  - pokus2
+  - pokus3
+  - pokus4
+  - style
 
 ## Referát o tom, kdo to byl Tim Sweeney
 
