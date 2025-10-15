@@ -8,7 +8,7 @@
 - pokus4
 - style
 
-## Referát o tom, kdo to byl Tima Sweeney
+## Referát o tom, kdo to byl Tim Sweeney
 
 - Stručný referát (na jedničku by to mělo stačit)
 
