@@ -1,0 +1,62 @@
+:root{
+  --primary: #0f4db2;
+  --muted: #6b7280;
+  --hero-height: 75vh;
+  --container-max: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+body{
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f7fbff;
+  color: #0f172a;
+  -webkit-font-smoothing:antialiased;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container { max-width: var(--container-max); }
+
+/* NAV */
+.navbar { background: #fff; }
+
+/* HERO (3/4) - now using bobovacka.png from images/ folder */
+.hero{
+  position: relative;
+  height: var(--hero-height);
+  min-height: 520px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background-image: url('images/bobovacka.png'), linear-gradient(135deg,#dceefe 0%, #eef6ff 50%, #f8fbff 100%);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background: linear-gradient(180deg, rgba(6,32,65,0.45), rgba(6,32,65,0.18));
+}
+.hero-content{ position: relative; z-index: 2; padding: 2rem; max-width: 980px; color: #fff; }
+
+/* Headings */
+.display-1 { font-size: clamp(2.2rem, 6vw, 4rem); color: #fff; text-shadow: 0 8px 20px rgba(3,37,76,0.45); }
+
+/* Cards */
+.card { border-radius: 10px; }
+
+/* images responsive */
+img { max-width: 100%; height: auto; display: block; }
+
+/* small utilities */
+.lead { color: rgba(255,255,255,0.95); }
+
+/* Responsive */
+@media (max-width: 767px) {
+  :root { --hero-height: 50vh; }
+  .hero { min-height: 320px; }
+  .display-1 { font-size: 2rem; }
+}

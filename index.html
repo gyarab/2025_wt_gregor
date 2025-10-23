@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ski Areál Praha — Vizitka</title>
+  <meta name="description" content="Malá lokální vizitka Ski Areál Praha — rezervace permic, info, kontakt.">
+  <meta name="author" content="Marek Gregor">
+  <meta name="keywords" content="ski, boby, Petřín, Praha, permice, rezervace">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#top">Ski Areál Praha</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Přepnout navigaci">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">O areálu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Služby</a></li>
+          <li class="nav-item"><a class="nav-link" href="#permice">Rezervace</a></li>
+          <li class="nav-item"><a class="nav-link" href="#media">Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mapa">Mapa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO (big photo ~3/4 screen) -->
+  <header class="hero d-flex align-items-center" id="top" role="banner">
+    <div class="hero-overlay"></div>
+    <div class="container text-center hero-content text-white">
+      <h1 class="display-1 fw-bold mb-3"></h1>
+      <p class="lead mb-4"></p>
+      <p>
+        <a class="btn btn-outline-light btn-lg me-2" href="#permice"><i class="bi bi-ticket-perforated me-1"></i>Rezervovat</a>
+        <a class="btn btn-light btn-lg text-dark" href="#mapa"><i class="bi bi-geo-alt me-1"></i>Kde nás najdete</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- ABOUT -->
+    <section id="about" class="mb-5">
+      <h2 class="h3 fw-bold mb-3">O areálu</h2>
+      <p class="text-muted">Jedná se o areál umožňující bobovat a lyžovat na Petříňe bez rizika pokuty od policie České republiky. Zakoupením naší permice automaticky dostáváte povolení a možnost přístupu k vleku.</p>
+    </section>
+
+    <!-- RESERVATION simple (plus newsletter text input) -->
+    <section id="permice" class="mb-5">
+      <h2 class="h3 fw-bold mb-3">Rezervace</h2>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="card shadow-sm p-3">
+            <div class="card-body">
+              <h3 class="h5 mb-3">Rychlá rezervace</h3>
+              <form id="reserveForm" class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="rname" class="form-label">Jméno</label>
+                  <input id="rname" class="form-control" required placeholder="Jan Novák">
+                  <div class="invalid-feedback">Zadejte vaše jméno.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="remail" class="form-label">E‑mail</label>
+                  <input id="remail" type="email" class="form-control" required placeholder="email@domena.cz">
+                  <div class="invalid-feedback">Zadejte platný e‑mail.</div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                  <div class="col-sm-6">
+                    <label for="rduration" class="form-label">Délka</label>
+                    <select id="rduration" class="form-select" required>
+                      <option value="">Vyberte</option>
+                      <option value="1h">1 hodina</option>
+                      <option value="3h">3 hodiny</option>
+                      <option value="day">Denní</option>
+                    </select>
+                    <div class="invalid-feedback">Vyberte délku.</div>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="rqty" class="form-label">Počet osob</label>
+                    <select id="rqty" class="form-select" required>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary">Potvrdit rezervaci</button>
+                </div>
+              </form>
+
+              <div id="reserveMsg" class="alert alert-success mt-3 d-none" role="alert">
+                Děkujeme — rezervace byla odeslána.
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- MAP (Petřín) -->
+    <section id="mapa" class="mb-5">
+      <h2 class="h3 fw-bold mb-3">Kde nás najdete</h2>
+      <div class="ratio ratio-16x9 rounded shadow-sm mb-3">
+        <iframe src="https://www.google.com/maps?q=Pet%C5%99%C3%ADn%20Praha&z=15&output=embed" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="kontakt" class="mb-5">
+      <h2 class="h3 fw-bold mb-3">Kontakt</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-1"><strong>Provozovatel:</strong> Marek Gregor</p>
+          <p class="mb-1"><strong>Adresa:</strong> Horní-Dolní, Šrekova bažina 67</p>
+          <p class="mb-1"><strong>E‑mail:</strong> <a href="mailto:nenitoscamvertemi@gmail.com">není.to.scam.věřte.mi@100%real.com</a></p>
+          <p class="mb-0"><strong>Telefon:</strong> +420 602 555 010</p>
+        </div>
+        <div class="col-md-6">
+          <p class="text-muted small">Otevírací doba a bezpečnostní pokyny jsou k dispozici na vyžádání. Pro skupinové rezervace nás kontaktujte e-mailem nebo telefonicky.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white py-4 border-top">
+    <div class="container text-muted small d-flex justify-content-between">
+      <div>© Ski Areál Praha</div>
+      <div>Design: Marek Gregor 2.F</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
